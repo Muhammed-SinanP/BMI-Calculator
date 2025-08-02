@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link rel="icon" type="image/png" href="./public/images/bmi.png">
-    <link rel="stylesheet" href="./public/style.css">
-</head>
-<body class="model">
+    <link rel="icon" type="image/png" href="./public/images/bmi.png" />
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body class="model">
     <div class="pt-12 md:p-0">
-      <h1 class="text-3xl font-extrabold text-blue-500"><span class="text-blue-700">BMI </span>CALCULATOR</h1>
-      <h2 class="text-lg text-blue-400 font-semibold">Check your BMI & stay healthy</h2>
+      <h1 class="text-3xl font-extrabold text-blue-500">
+        <span class="text-blue-700">BMI </span>CALCULATOR
+      </h1>
+      <h2 class="text-lg text-blue-400 font-semibold">
+        Check your BMI & stay healthy
+      </h2>
     </div>
-    <div class="card"> 
-        <a href="./index.html" class="btn btn-reset">&#x27F3;</a>
-        <label for="height" class="text-lg font-semibold ">Enter your height</label>
-        <div><input type="number" id="height" class="inputBox" min="1" oninput=" this.value = this.value.replace(/[^0-9]/g, '')" required autocomplete="off"><span class="px-2">cm</span></div>
-        <label for="weight" class="text-lg font-semibold">Enter your weight</label>
-        <div><input type="number" id="weight" class="inputBox" min="1" oninput=" this.value = this.value.replace(/[^0-9]/g, '')" required autocomplete="off"><span class="px-2">kg</span></div>
-        <div class="text-center m-1"><button type="button" class=" btn btn-submit" id="check" onclick="check()">Check</button></div>
-        <div class="hidden text-center text-black font-bold text-2xl tracking-wide" id="displayBMI"></div>
-        <div class="hidden text-center mt-2 text-3xl font-bold py-2 tracking-wide drop-shadow-lg" id="displayStatus"></div>
-        
+    <div class="card">
+      <a href="./index.html" class="btn btn-reset">&#x27F3;</a>
+      <label for="height" class="text-lg font-semibold"
+        >Enter your height</label
+      >
+      <div>
+        <input
+          type="number"
+          id="height"
+          class="inputBox"
+          min="1"
+          oninput=" this.value = this.value.replace(/[^0-9]/g, '')"
+          required
+          autocomplete="off"
+        /><span class="px-2">cm</span>
+      </div>
+      <label for="weight" class="text-lg font-semibold"
+        >Enter your weight</label
+      >
+      <div>
+        <input
+          type="number"
+          id="weight"
+          class="inputBox"
+          min="1"
+          oninput=" this.value = this.value.replace(/[^0-9]/g, '')"
+          required
+          autocomplete="off"
+        /><span class="px-2">kg</span>
+      </div>
+      <div class="text-center m-1">
+        <button
+          type="button"
+          class="btn btn-submit"
+          id="check"
+          onclick="check()"
+        >
+          Check
+        </button>
+      </div>
     </div>
-    
-    
+
+    <div>
+      <div
+        class="hidden text-center text-black font-bold text-2xl tracking-wide"
+        id="displayBMI"
+      ></div>
+      <div
+        class="hidden text-center mt-2 text-3xl font-bold py-2 tracking-wide drop-shadow-lg"
+        id="displayStatus"
+      ></div>
+    </div>
 
     <script src="./public/index.js"></script>
-</body>
+  </body>
 </html>
