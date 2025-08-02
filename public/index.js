@@ -57,8 +57,5 @@ function check() {
 
     displayBMI.innerHTML = `Your BMI: <strong>${result}</strong>`;
     displayStatus.innerHTML = msg;
-
-    height.value = "";
-    weight.value = "";
   }
 }
